@@ -9,16 +9,13 @@ import retrofit2.http.Query
 interface NewsService {
 
     @GET("/")
-    fun getBeritaRandom(
-    ) : Call<Berita>
+    fun getBeritaRandom() : Call<Berita>
 
     @GET("search/")
     fun getSearchBerita(
-        @Query("q") query: String?
-    ) : Call<Berita>
+        @Query("q") query: String?) : Call<Berita>
 
     @GET("detail/")
     fun getDetailBerita(
-        @Query("url") url: String?
-    ) : Call<DetailBerita>
+        @Query("url") url: String?) : Call<DetailBerita>
 }
