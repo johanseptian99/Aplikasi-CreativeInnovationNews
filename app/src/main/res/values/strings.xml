@@ -12,4 +12,10 @@
     <string name="judul">Judul</string>
     <string name="body">Body</string>
     <string name="notif_snackbar">Berita Ditambahkan ke Favorite !!!</string>
+    <string name="title2">title2</string>
+    <string name="desc">desc</string>
+    <string name="next">Next</string>
+    <string name="image_intro">image_intro</string>
+    <string name="GetStarted">Get Started</string>
+    <string name="Next">Next</string>
 </resources>

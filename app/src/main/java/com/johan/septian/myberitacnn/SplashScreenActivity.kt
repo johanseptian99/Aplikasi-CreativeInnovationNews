@@ -13,7 +13,7 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun run() {
                 try {
                     sleep(2000)
-                    val intent = Intent(applicationContext, MainActivity::class.java)
+                    val intent = Intent(applicationContext, MainBoarding::class.java)
                     startActivity(intent)
                     finish()
                 } catch (e: InterruptedException) {
