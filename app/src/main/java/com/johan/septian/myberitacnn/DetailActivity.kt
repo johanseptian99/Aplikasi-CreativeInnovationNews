@@ -1,6 +1,5 @@
 package com.johan.septian.myberitacnn
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,7 +10,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.johan.septian.myberitacnn.fragment.DetailViewModel
 import com.johan.septian.myberitacnn.model.ItemNews
 import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.item_news.*
 
 class DetailActivity : AppCompatActivity() {
 
