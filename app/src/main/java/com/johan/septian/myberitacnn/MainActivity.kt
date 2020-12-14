@@ -2,6 +2,7 @@ package com.johan.septian.myberitacnn
 
 import android.app.SearchManager
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -10,8 +11,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.johan.septian.myberitacnn.fragment.SearchFragment
-import com.johan.septian.myberitacnn.fragment.SearchFragment.Companion.EXTRA_NAME
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,23 +46,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onQueryTextSubmit(query: String?): Boolean {
-                val mSearchFragment = SearchFragment()
-                val mBundle = Bundle()
-                mBundle.putString(EXTRA_NAME, query)
-                mSearchFragment .arguments = mBundle
-                val mFragmentManager = supportFragmentManager
-                mFragmentManager.beginTransaction().apply {
-                    replace(
-                        R.id.nav_host_fragment,
-                        mSearchFragment,
-                        SearchFragment::class.java.simpleName
-                    )
-                    addToBackStack(null)
-                    commit()
-                }
-                val navController = findNavController(R.id.nav_host_fragment)
-                navController.navigate(R.id.searchFragment)
-
+                val moveWithDataIntent = Intent(this@MainActivity, SearchActivity::class.java)
+                moveWithDataIntent.putExtra(SearchActivity.EXTRA_NAME, query)
+                startActivity(moveWithDataIntent)
                 return false
             }
         })
