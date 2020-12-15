@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
-        android:src="@drawable/ic_baseline_favorite_24"
-        app:backgroundTint="#FFFFFF" />
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        app:backgroundTint="#EC0ABB"
+        android:contentDescription="@string/logo" />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -33,8 +34,9 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="5dp"
                 android:text="@string/judul"
+                android:textAlignment="gravity"
                 android:textColor="#000000"
-                android:textSize="21sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +64,7 @@
                 android:layout_marginEnd="5dp"
                 android:text="@string/body"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />

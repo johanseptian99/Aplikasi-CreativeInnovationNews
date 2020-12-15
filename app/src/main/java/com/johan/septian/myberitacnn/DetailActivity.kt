@@ -35,8 +35,12 @@ class DetailActivity : AppCompatActivity() {
                     .load(it[0].poster)
                     .into(findViewById(R.id.imageViewDetail))
                 supportActionBar?.title = "Detail Berita"
-                DetailJudul.text = it[0].judul
-                DetailBody.text = it[0].body
+                var judulText = it[0].judul.toString()
+                judulText = judulText.replace(("\\s ").toRegex(), "")
+                DetailJudul.text = judulText
+                var bodyText = it[0].body.toString()
+                bodyText = bodyText.replace(("\\s ").toRegex(), "")
+                DetailBody.text = bodyText
 
 
                 val fab: View = findViewById(R.id.fab)
