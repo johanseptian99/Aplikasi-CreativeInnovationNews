@@ -2,7 +2,7 @@
     <string name="app_name">MyBeritaCNN</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Category</string>
-    <string name="title_notifications">Favorite</string>
+    <string name="title_notifications">COVID-19</string>
     <string name="apps_version">Version 1.0.1</string>
     <string name="logo">TODO</string>
     <string name="search">search</string>
