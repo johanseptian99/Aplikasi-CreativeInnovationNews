@@ -27,6 +27,6 @@ class DetailActivity : AppCompatActivity() {
             }
         }
         webView.loadUrl("${item?.link}")
-
+        supportActionBar?.title = "Detail Berita"
     }
 }
