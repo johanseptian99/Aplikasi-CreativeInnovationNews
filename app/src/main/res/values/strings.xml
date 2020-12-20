@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MyBeritaCNN</string>
+    <string name="app_name">MyBeritaCIN</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Category</string>
     <string name="title_notifications">COVID-19</string>
